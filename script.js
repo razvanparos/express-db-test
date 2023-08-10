@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify({ username, password }),
             });
 
-            const data = await response.json();
+            const data = await response.text();
             console.log(data);
             // alert(JSON.stringify(data.message));
             if(data.message!='Login successful'){
