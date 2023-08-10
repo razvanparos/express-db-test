@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('loginPassword').value;
 
         try {
-            const response = await fetch('https://express-db-test.vercel.app:3001/login', {
+            const response = await fetch('https://express-db-test.vercel.app/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const password = document.getElementById('registerPassword').value;
 
         try {
-            const response = await fetch('https://express-db-test.vercel.app:3001/register', {
+            const response = await fetch('https://express-db-test.vercel.app/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
